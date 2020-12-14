@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css"></head>
+<body>
+        <div id="container">
+                    <h1>Enter City</h1>
+            </div>
+
+            <div class="wrap">
+                <div class="search">
+                   <input type="text" id ="search-input" class="searchTerm" placeholder="City weather">
+                   <button type="submit" id ="show-button" class="searchButton">
+                     <text>Search</text>
+                  </button>
+                </div>
+             </div>
+             
+             <div id="display-cityData"></div>
+            <script id="cityData-template" type="text/x-handlebars-template">
+        {{#each allCityData}}
+        <div id="city">
+            <div class="name">{{name}}</div>
+            <div class="temperature"> {{temperature}}</div>
+            <div class="condition">{{condition}}</div>
+            <div class= "population">{{population}}</div>
+            <button class="save simple-button"  class="searchButton">save</button>
+            <button class="delete simple-button">delete</button>
+        </div>
+        {{/each}}
+    
+    </script>
+
+
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="handlebars/dist/handlebars.js"></script>
+    <script src="TempManager.js"></script>
+    <script src= "Renderer.js"></script>
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>

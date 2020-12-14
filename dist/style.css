@@ -1,0 +1,83 @@
+ #container{
+     text-align: center;
+     height: 150px;
+ }
+ body{
+  background: #bae1e2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  color: #359ad4;
+}
+.searchButton {
+  width: 100px;
+  height: 36px;
+  color: #fff;
+  border: 1px solid #00B4CC;
+  background: #00cc77;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+h1 {
+    display: inline-block;
+    width: 100%;
+    border-right: none; 
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00B4CC;
+  }
+
+  .simple-button {
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    outline: none;
+    padding: 0.278em 2.556em;
+    background: #00B4CC;
+    border-radius: 0.22em;
+    cursor: pointer;
+  }
+
+  .simple-button:active {
+    text-shadow: 0 -0.056em 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 0.556em rgba(0, 0, 0, 0.5) inset;
+    position: relative;
+    top: 0.167em;
+  }
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #city{
+    display: block;
+    color: #fff;
+    top: 50px;
+    text-align: center;
+    background-color: rgba(84, 192, 196, 0.356);
+    font-size: 30px;
+    margin: 30px;
+
+  }
+  #display-cityData{
+    display: block;
+    top: 50px;
+  }
+
+ 
